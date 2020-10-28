@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index', function () {
-    return view('index');
-});
 
-//Route::resource('Books', 'BookController');
+
+Route::resource('Books', 'BookController');
