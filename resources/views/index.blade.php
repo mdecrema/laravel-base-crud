@@ -7,7 +7,7 @@
         <title>index</title>
     </head>
 <body>
-    @foreach
+    @foreach ($books as $book)
         <div>
             <h2>{{$book->title}}</h2>
             <h3>{{$book->author}}</h3>
