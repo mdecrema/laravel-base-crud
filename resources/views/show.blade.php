@@ -7,13 +7,9 @@
         <title>Laravel</title>
     </head>
 <body>
-    <form action="{{route('Books.store')}}" method="POST">
-        @csrf
-        @method('POST')
-        <input type="text" name="title">
-        <input type="text" name="author">
-
-        <input type="submit" value="salva">
-    </form>
+    <ul>
+        <li>{{$book->title}}</li>
+        <li>{{$book->author}}</li>
+    </ul>
 </body>
 </html>

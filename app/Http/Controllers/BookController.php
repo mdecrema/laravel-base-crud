@@ -43,6 +43,8 @@ class BookController extends Controller
         $newBook->author = $data['author'];
 
         $newBook->save();
+
+        return redirect()->route('books.show', $book);
     }
 
     /**
